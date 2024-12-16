@@ -1,0 +1,32 @@
+{% extends "index.html" %}
+
+{% block head %}
+<link rel="stylesheet" href="{{ url_for('static', filename='css/pdf-viewer.css') }}">
+{% endblock %}
+
+{% block content %}
+<div class="pdf-container">
+    <button class="back-button" onclick="window.history.back()">
+        <i class="fas fa-arrow-left"></i> Go Back
+    </button>
+
+    {% if pdf_file %}
+        <div class="pdf-content">
+            <iframe 
+                class="pdf-frame"
+                src="{{ url_for('static', filename='pdfs/' + pdf_file) }}#toolbar=0&navpanes=0&scrollbar=0"
+                type="application/pdf"
+                style="width: 100%; height: 90vh;">
+                <p>Your browser doesn't support embedded PDFs. 
+                   <a href="{{ url_for('static', filename='pdfs/' + pdf_file) }}">Click here to download the PDF</a>
+                </p>
+            </iframe>
+        </div>
+    {% else %}
+        <div class="pdf-error">
+            <h3>⚠️ PDF Not Available</h3>
+            <p>The PDF for this course is currently not available.</p>
+        </div>
+    {% endif %}
+</div>
+{% endblock %}

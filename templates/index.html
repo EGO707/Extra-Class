@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}ExtraClass{% endblock %}</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+    {% block css %}{% endblock %}
+</head>
+<body>
+    <nav class="navbar">
+      <div class="nav-container">
+        <div class="logo">
+          <h1>ExtraClass</h1>
+        </div>
+        <ul class="menu-items">
+          <li><a href="/">Home</a></li>
+          <li><a href="/about_us">About</a></li>
+          <li><a href="/pyq">Pyq</a></li>
+          <li><a href="/study_guide">Study Guide</a></li>
+          <li><a href="/notes">Notes</a></li>
+        </ul>
+      </div>
+    </nav>
+    <div class="main" style="opacity: 1; animation: none;">
+      <div class="initial-snow">
+        <div class="snow">&#10052;</div>
+        <div class="snow">&#10052;</div>
+        <div class="snow">&#10052;</div>
+        <div class="snow">&#10052;</div>
+        <div class="snow">&#10052;</div>
+        <div class="snow">&#10052;</div>
+        <div class="snow">&#10052;</div>
+        <div class="snow">&#10052;</div>
+        <div class="snow">&#10052;</div>
+        <div class="snow">&#10052;</div>
+        <div class="snow">&#10052;</div>
+        <div class="snow">&#10052;</div>
+        <div class="snow">&#10052;</div>
+        <div class="snow">&#10052;</div>
+        <div class="snow">&#10052;</div>
+        <div class="snow">&#10052;</div>
+        <div class="snow">&#10052;</div>
+        <div class="snow">&#10052;</div>
+        <div class="snow">&#10052;</div>
+        <div class="snow">&#10052;</div>
+        <div class="snow">&#10052;</div>
+        <div class="snow">&#10052;</div>
+        <div class="snow">&#10052;</div>
+        <div class="snow">&#10052;</div>
+        <div class="snow">&#10052;</div>
+        <div class="snow">&#10052;</div>
+        <div class="snow">&#10052;</div>
+        <div class="snow">&#10052;</div>
+        <div class="snow">&#10052;</div>
+        <div class="snow">&#10052;</div>
+        <div class="snow">&#10052;</div>
+        <div class="snow">&#10052;</div>
+        <div class="snow">&#10052;</div>
+        <div class="snow">&#10052;</div>
+        <div class="snow">&#10052;</div>
+        <div class="snow">&#10052;</div>
+        <div class="snow">&#10052;</div>
+        <div class="snow">&#10052;</div>
+        <div class="snow">&#10052;</div>
+        <div class="snow">&#10052;</div>
+        <div class="snow">&#10052;</div>
+        <div class="snow">&#10052;</div>
+        <div class="snow">&#10052;</div>
+        <div class="snow">&#10052;</div>
+        <div class="snow">&#10052;</div>
+        <div class="snow">&#10052;</div>
+        <div class="snow">&#10052;</div>
+        <div class="snow">&#10052;</div>
+        <div class="snow">&#10052;</div>
+        <div class="snow">&#10052;</div>
+        <div class="snow">&#10052;</div>
+        <div class="snow">&#10052;</div>
+        <div class="snow">&#10052;</div>
+      </div>
+    </div>
+    {% block content %}
+    {% endblock %}
+</body>
+</html>
+

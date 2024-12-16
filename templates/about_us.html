@@ -1,0 +1,35 @@
+{% extends "index.html" %}
+
+{% block title %}About Us - Educational Organization{% endblock %}
+
+{% block css %}
+{{ super() }}
+<link rel="stylesheet" href="{{ url_for('static', filename='css/content-pages.css') }}">
+{% endblock %}
+
+{% block content %}
+<div class="page-container">
+    <div class="content-wrapper glass-effect">
+        <h1 class="page-title">About Us</h1>
+        
+        <p class="content-text">Our mission is to empower learners of all ages through high-quality education and training. Established in 2010, we have helped thousands of students achieve their academic and professional goals.</p>
+
+        <h2 class="section-title">What We Offer</h2>
+        <ul class="feature-list">
+            <li>Comprehensive courses in technology, science, and the arts.</li>
+            <li>Experienced educators and industry professionals as instructors.</li>
+            <li>Flexible learning options, including online and in-person classes.</li>
+        </ul>
+
+        <h2 class="section-title">Our Vision</h2>
+        <p class="content-text">We aim to be a global leader in education, fostering innovation, creativity, and lifelong learning in every student.</p>
+
+        <h2 class="section-title">Why Choose Us?</h2>
+        <ul class="feature-list">
+            <li>Customized learning paths to suit individual needs.</li>
+            <li>State-of-the-art resources and tools to enhance learning.</li>
+            <li>A supportive community that values diversity and inclusion.</li>
+        </ul>
+    </div>
+</div>
+{% endblock %}

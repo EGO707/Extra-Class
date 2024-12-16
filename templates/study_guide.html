@@ -1,0 +1,90 @@
+{% extends "index.html" %}
+
+{% block title %}Study Guide{% endblock %}
+
+{% block css %}
+{{ super() }}
+<link rel="stylesheet" href="{{ url_for('static', filename='css/content-pages.css') }}">
+{% endblock %}
+
+{% block content %}
+<div class="page-container">
+    <div class="content-wrapper glass-effect">
+        <h1 class="page-title">How to Study Effectively</h1>
+        <div class="study-guide-intro">
+            <p>Master your learning journey with these proven study techniques and strategies.</p>
+        </div>
+        
+        <div class="study-steps">
+            <div class="study-step">
+                <div class="step-number">1</div>
+                <div class="step-content">
+                    <h3>Set Clear Goals</h3>
+                    <ul>
+                        <li>Define specific study objectives</li>
+                        <li>Break down larger goals into manageable tasks</li>
+                        <li>Create a timeline for achievement</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="study-step">
+                <div class="step-number">2</div>
+                <div class="step-content">
+                    <h3>Create a Study Plan</h3>
+                    <ul>
+                        <li>Schedule dedicated study blocks</li>
+                        <li>Prioritize challenging subjects first</li>
+                        <li>Use a calendar to track progress</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="study-step">
+                <div class="step-number">3</div>
+                <div class="step-content">
+                    <h3>Active Learning Techniques</h3>
+                    <div class="technique-grid">
+                        <div class="technique">
+                            <span class="technique-icon">📚</span>
+                            <h4>Explain Concepts</h4>
+                            <p>Teach others what you've learned</p>
+                        </div>
+                        <div class="technique">
+                            <span class="technique-icon">✏️</span>
+                            <h4>Practice Problems</h4>
+                            <p>Regular problem-solving sessions</p>
+                        </div>
+                        <div class="technique">
+                            <span class="technique-icon">📝</span>
+                            <h4>Summarize</h4>
+                            <p>Create concise notes and diagrams</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="study-step">
+                <div class="step-number">4</div>
+                <div class="step-content">
+                    <h3>Stay Focused</h3>
+                    <div class="focus-tips">
+                        <div class="tip">
+                            <h4>🎯 Consistency</h4>
+                            <p>Study at the same time and place daily</p>
+                        </div>
+                        <div class="tip">
+                            <h4>🚫 Minimize Distractions</h4>
+                            <p>Create a quiet, organized study space</p>
+                        </div>
+                        <div class="tip">
+                            <h4>💪 Stay Physically and Mentally Healthy</h4>
+                            <p>Get enough sleep, exercise, and eat nutritious food.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
