@@ -187,62 +187,6 @@ button:hover {
     color: #764ba2;
 }
 
-.loader {
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	flex-direction: column;
-	overflow: hidden;
-	z-index: 0;
-	background: radial-gradient(
-		circle,
-		rgb(126, 223, 255) 0%,
-		rgba(71, 196, 255, 1) 68%,
-		rgba(0, 110, 239, 1) 100%
-	);
-}
-
-.loader-icon-1 {
-	font-size: 80px;
-	color: rgb(200, 241, 255, 0.8);
-	text-shadow: 1px 1px 1px rgba(71, 196, 255, 1), -1px -1px 1px white;
-	animation: snow-loader 0.5s 9 linear alternate-reverse forwards,
-		snow-loader-zoom 5s forwards;
-	animation-delay: 0s, 4.5s;
-}
-
-@keyframes snow-loader {
-	from {
-		transform: rotateY(0deg);
-	}
-
-	to {
-		transform: rotateY(90deg);
-	}
-}
-
-@keyframes snow-loader-zoom {
-	from {
-		transform: scale(1, 1) rotateZ(0deg);
-		color: rgb(200, 241, 255, 0.8);
-	}
-
-	to {
-		color: #123;
-		transform: scale(200, 200) rotateZ(360deg);
-	}
-}
-
-.loader-text {
-	font-size: 25px;
-	color: rgb(200, 241, 255);
-}
-
 .main {
     position: fixed;
     width: 100%;
@@ -251,28 +195,6 @@ button:hover {
     z-index: -1;
     top: 0;
     left: 0;
-}
-
-@keyframes main-loadup {
-	from {
-		opacity: 0;
-	}
-
-	to {
-		opacity: 1;
-	}
-}
-
-@keyframes main-loadup-bg {
-	from {
-		background-size: 100% 100%;
-		background-position: 0% 0%;
-	}
-
-	to {
-		background-size: 400% 400%;
-		background-position: 0% 100%;
-	}
 }
 
 .initial-snow {
@@ -296,8 +218,9 @@ button:hover {
 		transform: translate3d(var(--left-ini), 0, 0);
 	}
 
+
 	100% {
-		transform: translate3d(var(--left-end), 110vh, 0);
+		transform: translate3d(var(--left-end), 110vh, 0) rotate(360deg);
 	}
 }
 
@@ -803,4 +726,3 @@ body {
     text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
     font-size: 1.2rem;
 }
-
